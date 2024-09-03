@@ -1,0 +1,348 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: whitesmoke;
+            }
+
+            #header{
+                background-color: bisque;
+            }
+
+            h1{
+                background-color: #98FB98;
+            }
+
+            nav{
+                height: 70px;
+                background-color: #98FB98;
+                display: flex;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+
+            nav ul{
+                list-style-type: none;
+                flex: 2;
+                display: flex;
+            }
+
+            nav li{
+                display: inline;
+                text-align: center;
+                flex: 1;
+            }
+
+            nav a{
+                display: inline-block;
+                font-size: 14px;
+                text-decoration: none;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            ul a:hover{
+                background-color: white;
+                color: black;
+            }
+
+            form{
+                margin-top: 12px;
+            }
+
+            .search.input{
+                width: 350px;
+            }
+
+            #mais_vendidos{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 1300px;
+                height: 0 auto;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+                align-items: center;
+                border: solid 2px #98FB98;
+                padding-bottom: 15px;
+                padding-top: 15px;
+            }
+
+            button{
+                border: none;
+                background-color: #98FB98;
+                color: black;
+                padding: 5px 5px;
+            }
+
+            .button:hover{
+                color: #98FB98;
+            }
+            
+            #mais_vendidos a{
+                text-decoration: none;
+                color: black;
+            }
+
+            #Disco1{
+                width: 350px;
+                height: 480px;
+                border: solid 2px;
+                border-color: #D8BFD8;
+                float: left;
+                margin-left: 0px;
+                margin-right: 10px;
+            }
+
+            #Disco2{
+                width: 350px;
+                height: 480px;
+                border: solid 2px;
+                border-color: #D8BFD8;
+                float: left;
+                margin-left: 0px;
+                margin-right: 10px;
+            }
+
+            #Disco3{
+                width: 350px;
+                height: 480px;
+                border: solid 2px;
+                border-color: #D8BFD8;
+                float: left;
+                margin-left: 0px;
+                margin-right: 10px;
+            }
+
+            #Disco4{
+                width: 350px;
+                height: 480px;
+                border: solid 2px;
+                border-color: #D8BFD8;
+                float: bottom;
+                margin-left: 0px;
+                margin-right: 10px;
+                margin-top: 10px;
+            }
+
+            #Disco5{
+                width: 350px;
+                height: 480px;
+                border: solid 2px;
+                border-color: #D8BFD8;
+                float: bottom;
+                margin-left: 0px;
+                margin-right: 10px;
+                margin-top: 10px;
+            }
+
+            #artistas{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 1300px;
+                height: 0 auto;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+                padding-bottom: 15px;
+                padding-top: 15px;
+            }
+
+            #Artista1{
+                width: 350px;
+                height: 480px;
+                border-radius: 5px;
+                float: left;
+                margin-left: 0px;
+                margin-right: 10px;
+            }
+
+            #Artista2{
+                width: 350px;
+                height: 480px;
+                border-radius: 5px;
+                float: left;
+                margin-left: 0px;
+                margin-right: 10px;
+            }
+
+            #Artista3{
+                width: 350px;
+                height: 480px;
+                border-radius: 5px;
+                float: left;
+                margin-left: 0px;
+                margin-right: 10px;
+            }
+
+            #Artista4{
+                width: 350px;
+                height: 480px;
+                margin-left: 0px;
+                margin-right: 10px;
+                margin-top: 10px;
+            }
+
+            #Artista5{
+                width: 350px;
+                height: 480px;
+                margin-left: 0px;
+                margin-right: 10px;
+                margin-top: 10px;
+            }
+
+            #artistas a{
+                display: inline-block;
+                text-decoration: none;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            #unidades{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 1300px;
+                height: 0 auto;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+                padding-bottom: 15px;
+                padding-top: 15px;
+            }
+
+            #unidade1{
+                width: 350px;
+                height: 480px;
+                margin-left: 0px;
+                margin-right: 10px;
+                margin-top: 10px;
+                float: top;
+            }
+
+            #unidade2{
+                width: 350px;
+                height: 480px;
+                margin-left: 0px;
+                margin-right: 10px;
+                margin-top: 10px;
+                float: top;
+            }
+
+            #unidade3{
+                width: 350px;
+                height: 480px;
+                margin-left: 0px;
+                margin-right: 10px;
+                margin-top: 10px;
+                float: top;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <center><img src="png-transparent-singshop-logo-summer-school-font-record-shop-food-text-logo-removebg-preview.png" width="300" large="300"></center>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Principais Discos</a></li>
+                <li><a href="#">Mais Vendidos</a></li>
+                <li><a href="#">Explorar artistas</a></li>
+                <li><a href="#">Coleções</a></li>
+            </ul>
+
+            <form>
+                <input type="search" name="q" placeholder="Encontre seus discos preferidos">
+                <input type="submit" value="Busque">
+            </form>
+        </nav>
+
+        <br><br><center><h1><b>Mais Vendidos do Mês</b></h1></center><br>
+
+        <div id="mais_vendidos">
+            <div id="Disco1">
+                <center><a href="#"><img src="images-removebg-preview.png" width="300" large="200">
+                <h2>The Tortured<br>Poets Department</h2></a>
+                <h2>Taylor Swift</h2><br>
+                <a href="#"><button type="submit">Comprar</button></a></center>
+            </div>
+
+            <div id="Disco2">
+                <center><a href="#"><img src="0075678609244-removebg-preview.png" width="300" large="200">
+                <h2>BRAT</h2></a>
+                <h2>Charli XCX</h2><br>
+                <a href="#"><button type="submit">Comprar</button></a></center>
+            </div>
+
+            <div id="Disco3">
+                <center><a href="#"><img src="511N-QAB1RL._AC_UL210_SR210_210_-removebg-preview.png" width="300" large="200">
+                <h2>Hit Me Hard And Soft</h2></a>
+                <h2>Billie Eilish</h2>
+                <a href="#"><button type="submit">Comprar</button></a></center>
+            </div><br>
+
+            <br><div id="Disco4">
+                <center><a href="#"><img src="sabrina-xnqucl0biu-removebg-preview.png" width="300" large="200">
+                <h2>Short n'Sweet</h2></a>
+                <h2>Sabrina Carpenter</h2><br>
+                <a href="#"><button type="submit">Comprar</button></a></center>
+            </div>
+
+            <div id="Disco5">
+                <center><a href="#"><img src="dua-lipa_radical-optimism-lp-blue-curacao-0f3eb95a89d58240c117103693514280-1024-1024-removebg-preview.png" width="300" large="200">
+                <h2>Radical Optimism</h2></a>
+                <h2>Dua Lipa</h2><br>
+                <a href="#"><button type="submit">Comprar</button></a></center>
+            </div>
+        </div><br>
+
+        <br><br><center><h1><b>Artistas Mais Vendidos</b></h1></center><br>
+        <div id="artistas">
+            <div id="Artista1">
+                <center><img src="taylor.jpg" width="300" large="200">
+                <h2><a href="#">Taylor Swift</a></h2></center>
+            </div>
+
+            <div id="Artista2">
+                <center><img src="theweeknd.jpg" width="300" large="200">
+                <h2><a href="#">The Weeknd</a></h2></center>
+            </div>
+
+            <div id="Artista3">
+                <center><img src="billie.jpg" width="300" large="200">
+                <h2><a href="#">Billie Eilish</a></h2></center>
+            </div>
+
+            <div id="Artista4">
+                <center><img src="charli.jpg" width="300" large="200">
+                <h2><a href="#">Charli XCX</a></h2></center>
+            </div>
+
+            <div id="Artista5">
+                <center><img src="ariana.jpg" width="300" large="300">
+                <h2><a href="#">Ariana Grande</a></h2></center>
+            </div>
+        </div>
+
+        <br><br><center><h1><b>Nossas Unidades</b></h1></center><br>
+
+        <div id="unidades">
+            <div id="unidade1">
+                <p><h2>Unidade Vila Madalena</h2><br>
+                R. Fidalga, 516 - Vila Madalena, São Paulo - SP, 05432-000</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3691276522627!2d-46.693148425787655!3d-23.555182661363133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57a2be84f917%3A0xd2b6ee5e9934c441!2sPatu%C3%A1%20Discos!5e0!3m2!1spt-BR!2sbr!4v1725165192860!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+            </div>
+
+            <div id="unidade2">
+                <p><h2>Unidade República</h2><br>
+                R. Br. de Itapetininga, 37 - Loja 8 - República, São Paulo - SP, 01042-010</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.62036309008!2d-46.643262725788105!3d-23.54615306103147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce585187e315c9%3A0xf2ca2fa2877855f5!2sLocomotiva%20Discos!5e0!3m2!1spt-BR!2sbr!4v1725165380593!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div id="unidade3">
+                <p><h2>Unidade Consolação</h2><br>
+                R. Augusta, 1368 - Consolação, São Paulo - SP, 01304-001</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.355981311409!2d-46.660416925787544!3d-23.555655061380396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce583330413431%3A0x86c3e5c22aef755a!2sAugusta%20Discos!5e0!3m2!1spt-BR!2sbr!4v1725166219013!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </body>
+</html>avaliacao/ariana.jpg
